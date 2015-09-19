@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+// Избыточный комментарий
 using namespace std;
 
 inline float sinus(float,float);
