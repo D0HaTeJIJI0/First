@@ -15,7 +15,7 @@ int main()
 	cout << "\nmySin(x):\t" << mySin(x,epselon);
 	return 0;
 }
-
+//теперь видно?
 inline float mySin(float x,float epselon)
 {
 	float answer = 0,member = x;
