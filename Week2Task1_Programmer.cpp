@@ -1,9 +1,8 @@
 #include <iostream>
 #include <math.h>
-// Избыточный комментарий
 using namespace std;
 
-inline float sinus(float,float);
+inline float mySin(float,float);
 
 int main()
 {
@@ -13,20 +12,18 @@ int main()
 	cout << "\nEnter accurace epselon:\t";
 	float epselon;
 	cin >> epselon;
-	cout << "\nSin(x):\t" << sinus(x,epselon);
+	cout << "\nmySin(x):\t" << mySin(x,epselon);
 	return 0;
 }
 
-inline float sinus(float x,float epselon)
+inline float mySin(float x,float epselon)
 {
 	float answer = 0,member = x;
 	int n = 1;
-	cout << endl;
 	while (fabs(member) > epselon)
 	{
 		if (n%4 == 1) answer += member;
 		else answer -= member;
-		cout << answer << endl;
 		member *= (x*x)/(++n)/(++n);
 	}
 	return answer;
