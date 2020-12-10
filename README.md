@@ -2,4 +2,4 @@
 
 My first repository.
 
-I love :pizza:.
+I love :pizza:, :banana:.
